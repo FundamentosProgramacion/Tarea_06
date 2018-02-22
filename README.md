@@ -6,7 +6,7 @@ Consulta el documento anexo Tarea-06.pdf para ver los detalles.
 
 1. Clona el proyecto desde PyCharm.
 2. Agrega tu programa con la solución.
-3. Agrega tu captura si quieres participar para ganar una estrella.
+3. Agrega una captura si quieres participar para ganar una estrella.
 4. Haz Commit & Push desde PyCharm.
 5. Desde la página de Github, abre un Pull Request para que te califique.
 
