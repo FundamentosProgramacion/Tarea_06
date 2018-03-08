@@ -10,5 +10,10 @@ Consulta el documento anexo Tarea-06.pdf para ver los detalles.
 4. Haz Commit & Push desde PyCharm.
 5. Desde la página de Github, abre un Pull Request para que te califique.
 
+6. Las ecuaciones correctas son estas:
+
+![alt text](https://appmovil.cem.itesm.mx/rmroman/ecuaciones.png "Ecuaciones")
 
 ![alt text](https://appmovil.cem.itesm.mx/rmroman/2018-11/tc1014/Docs/Estrella_3D.png "Estrella!")
+
+
