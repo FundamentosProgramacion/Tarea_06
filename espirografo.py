@@ -6,9 +6,9 @@ from random import randint
 ANCHO = 800
 ALTO = 800
 # Colores
-BLANCO = (255, 255, 255)  # R,G,B en el rango [0,255]
+NEGRO = (0, 0, 0)  # R,G,B en el rango [0,255]
 VERDE_BANDERA = (0, 122, 0)
-ROJO = (255, 0, 0)
+AL = (243, 192, 100)
 
 
 def espiro(ventana,r,R,l):
@@ -39,13 +39,30 @@ def dibujar(r,R,l):
                 termina = True
 
         # Borrar pantalla
-        ventana.fill(BLANCO)
+        ventana.fill(NEGRO)
 
 
         # Dibujar, aquí haces todos los trazos que requieras
         # Normalmente llamas a otra función y le pasas -ventana- como parámetro, por ejemplo, dibujarLineas(ventana)
         espiro(ventana,r,R,l)
-        #espiro(ventana,10,100,4)
+
+        # espiro(ventana, 65,220,0.8)# Base
+        # espiro(ventana, 10, 200, 0.8) #A
+        # espiro(ventana, 60, 65, 0.8) #B
+        # espiro(ventana, 40,100,0.2) #C
+        # espiro(ventana, 30, 44, 0.8) #D
+        # espiro(ventana, 110, 50, 0.8) #E
+        # espiro(ventana, 130, 440, 0.8) #F
+        # espiro(ventana, 170, 350, 1.2) #G
+        #espiro(ventana, 6, 100, 6)  # H
+        #espiro(ventana, 4, 40, 4)  # I
+        #espiro(ventana, 220, 100, 0.8)  # J
+        #espiro(ventana, 7, 320, 4)  # K
+        # espiro(ventana, 220, 65, 0.8)#L
+
+
+
+
 
 
 
