@@ -56,7 +56,7 @@ def dibujar(r,R,l):
         reloj.tick(40)  # 40 fps
 
     # Después del ciclo principal
-    pygame.quit()  # termina pygame
+    pygame.quit()  # termina pygame.
 
 
 def main():
