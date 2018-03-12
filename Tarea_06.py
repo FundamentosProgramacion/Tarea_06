@@ -13,17 +13,32 @@ BLANCO = (255, 255, 255)  # R,G,B en el rango [0,255]
 VERDE_BANDERA = (0, 122, 0)
 ROJO = (255, 0, 0)
 NEGRO = (0, 0, 0)
-
+NARANJA = (255, 131, 0)
 def drawRose(ventana, m, k):
+    contador = 1
+    contador2 = 0
     for alfa in range(0, 360, 1):
+        contador -= 3
         alfaRad = radians(alfa)
         r = m* cos(k*alfaRad)
         x = (int(r*cos(alfaRad)) + ANCHO//2)
         y = ALTO//2 - int(r*sin(alfaRad))
+        x2 = (int(r*cos(sin(alfaRad)))+ANCHO//2)
+        y2 = ALTO//2 - int(r*sin(cos(alfaRad)))
         randomColor = (ran(0, 255), ran(0, 255), ran(0, 255))
         pygame.draw.circle(ventana, randomColor, (x, y), 10, 2)
-
-
+        contador += 5
+        contador2 += 1
+        pygame.draw.circle(ventana, ROJO, (x+ contador*2, y - contador*3), 25)
+        pygame.draw.circle(ventana, ROJO, (x - contador * 3, y + contador * 2), 25)
+        pygame.draw.circle(ventana, BLANCO, (x+contador, y + contador), 20, 0)
+        pygame.draw.circle(ventana, BLANCO, (x - contador, y - contador), 20, 0)
+        pygame.draw.circle(ventana, VERDE_BANDERA, (x, y//3), 20, 0)
+        pygame.draw.circle(ventana, VERDE_BANDERA, (x//3, y), 20, 0)
+        pygame.draw.circle(ventana, VERDE_BANDERA, (x//3, y *3), 20, 0)
+        pygame.draw.circle(ventana, VERDE_BANDERA, (x*3, y//3), 20, 0)
+        pygame.draw.circle(ventana, NARANJA, (x2, y2), 20, 1)
+        pygame.draw.circle(ventana, NARANJA, (x2, y2),20, 1)
 
 # Estructura básica de un programa que usa pygame para dibujar
 def dibujar():
